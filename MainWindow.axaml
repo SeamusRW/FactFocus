@@ -4,6 +4,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="FactFocus.MainWindow"
-        Title="FactFocus">
-    Welcome to Avalonia!
+        Title="Fact Focus">
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <ComboBox Grid.Row="0" Width="200">
+        <ComboBoxItem Content="Option 1"/>
+        <ComboBoxItem Content="Option 2"/>
+        <ComboBoxItem Content="Option 3"/>
+    </ComboBox>
+
+    <TextBox Grid.Row="1" TextWrapping="Wrap" AcceptsReturn="True" />
+    </Grid>
 </Window>
